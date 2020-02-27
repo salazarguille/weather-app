@@ -1,0 +1,53 @@
+{
+    "name": "api",
+    "version": "0.1.0",
+    "main": "dist",
+    "scripts": {
+        "clean": "rm -rf dist && mkdir dist",
+        "dev": "nodemon --exec babel-node src",
+        "build": "babel src -s -D -d dist",
+        "start": "node dist",
+        "prestart": "npm run -s clean && npm run -s build",
+        "test": "jest"
+    },
+    "author": {
+        "email": "guillesalazar@gmail.com",
+        "name": "Guillermo Salazar"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "axios": "^0.18.0",
+        "body-parser": "^1.13.3",
+        "compression": "^1.5.2",
+        "cors": "^2.7.1",
+        "dotenv": "^6.2.0",
+        "express": "^4.16.4",
+        "lodash": "^4.17.11",
+        "mocha": "^7.0.1",
+        "morgan": "^1.8.0"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.2.3",
+        "@babel/core": "^7.2.2",
+        "@babel/node": "^7.2.2",
+        "@babel/polyfill": "^7.2.5",
+        "@babel/preset-env": "^7.3.1",
+        "@babel/register": "^7.0.0",
+        "babel-core": "^7.0.0-bridge.0",
+        "babel-jest": "^23.6.0",
+        "chai": "^4.2.0",
+        "eslint": "^5.13.0",
+        "eslint-config-airbnb-base": "^13.1.0",
+        "eslint-plugin-import": "^2.17.2",
+        "eslint-plugin-jest": "^22.4.1",
+        "jest": "^25.1.0",
+        "leche": "^2.2.3",
+        "nock": "^10.0.6",
+        "nodemon": "^1.9.2",
+        "prettier": "^1.16.4"
+    },
+    "engines": {
+        "node": "10.15.x",
+        "npm": "6.4.1"
+    }
+}
