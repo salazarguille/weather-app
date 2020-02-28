@@ -54,9 +54,3 @@ The API project has 37 unit tests, and a code coverage +70%.
 
 ![Weather App - Hours](images/weather-app-hours.png)
 
-### Pending Tasks
-
-- Use Docker Compose for both projects.
-- FrontEnd: Add unit tests and code coverage.
-- BackEnd: Add caching.
-- BackEnd: Improve how the URL is created.
